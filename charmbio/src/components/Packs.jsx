@@ -5,12 +5,11 @@ const packs = [
     goal: 'Lisser rides et ridules, raffermir les contours et redonner éclat et vitalité au visage.',
     machines: 'Perfect Shape R NEO + Illustria 448 kHz + Hydra Spa 18-en-1',
     seances: '6 séances Perfect Shape NEO + 4 séances Illustria + 2 soins Hydra Spa Visage',
-    bonus: 'Sérum anti-âge + 2 séances massage de votre choix',
+    bonus: 'Sérum anti-âge + 2 séances massage au choix',
     cible: 'Femmes et hommes à partir de 35 ans souhaitant préserver ou restaurer la jeunesse de leur peau.',
     price: 'Prix Premium',
+    headerBg: 'bg-gradient-to-r from-purple-600 to-purple-800',
     tag: 'Anti-Âge',
-    tagColor: 'bg-purple-500',
-    color: 'border-purple-200 bg-purple-50',
   },
   {
     name: 'Silhouette Divine',
@@ -19,11 +18,10 @@ const packs = [
     machines: 'Perfect Shape R NEO + Pressothérapie / Drainage',
     seances: '7 séances Perfect Shape NEO + 4 séances de drainage',
     bonus: 'Programme nutritionnel minceur (WhatsApp) + Suivi photos minceur',
-    cible: 'Femmes et hommes souhaitant perdre des centimètres, tonifier leur corps et retrouver une silhouette élancée.',
+    cible: 'Femmes et hommes souhaitant perdre des centimètres et retrouver une silhouette élancée.',
     price: 'Prix Premium',
+    headerBg: 'bg-gradient-to-r from-rose-500 to-rose-700',
     tag: 'Minceur',
-    tagColor: 'bg-rose-500',
-    color: 'border-rose-200 bg-rose-50',
   },
   {
     name: 'Éclat de Lune',
@@ -32,37 +30,34 @@ const packs = [
     machines: 'Hydra Spa 18-en-1 + Perfect Shape R NEO + LED Thérapie',
     seances: '3 soins Hydra Spa + 2 séances Illustria + 2 séances LED Thérapie',
     bonus: 'Masque hydratant offert',
-    cible: 'Femmes et hommes souhaitant raviver l\'éclat naturel de leur peau et corriger les imperfections.',
+    cible: 'Femmes et hommes souhaitant raviver l\'éclat naturel de leur peau.',
     price: 'Prix Moyen-Haut',
-    tag: 'Glow',
-    tagColor: 'bg-amber-500',
-    color: 'border-amber-200 bg-amber-50',
+    headerBg: 'bg-gradient-to-r from-amber-500 to-amber-600',
+    tag: 'Glow ✨',
   },
   {
     name: "L'Essence du Mariage",
     subtitle: 'Préparation Mariée',
-    goal: 'Préparer la peau et le corps de la mariée pour un éclat parfait et une silhouette harmonieuse le jour J.',
+    goal: 'Préparer la peau et le corps de la mariée pour un éclat parfait le jour J.',
     machines: 'Hydra Spa 18-en-1 + Perfect Shape R NEO + LED Thérapie',
     seances: '4 soins Hydra Spa + 4 séances Illustria + 2 séances LED Thérapie',
     bonus: 'Massage détente offert + 1 soin onglerie au choix',
-    cible: 'Femmes fiancées ou en préparation de mariage souhaitant rayonner pour leur cérémonie.',
-    price: 'Prix Premium Événementiel',
-    tag: 'Mariage',
-    tagColor: 'bg-pink-500',
-    color: 'border-pink-200 bg-pink-50',
+    cible: 'Femmes fiancées souhaitant rayonner pour leur cérémonie.',
+    price: 'Prix Événementiel',
+    headerBg: 'bg-gradient-to-r from-pink-500 to-pink-700',
+    tag: 'Mariage 💍',
   },
   {
     name: 'Première Rencontre',
     subtitle: 'Découverte Machine',
-    goal: 'Découvrir et tester les bienfaits des machines haut de gamme pour le bien-être et la beauté.',
+    goal: 'Découvrir et tester les bienfaits des machines haut de gamme.',
     machines: 'Hydra Spa 18-en-1 + Perfect Shape R NEO + Illustria 448 kHz',
     seances: '1 soin Hydra Spa + 1 séance Illustria + 1 séance Perfect Shape NEO',
     bonus: 'Soin cuir chevelu offert',
-    cible: 'Toute personne curieuse souhaitant expérimenter les soins innovants avant de choisir un programme complet.',
+    cible: 'Toute personne curieuse souhaitant expérimenter les soins innovants avant de choisir un programme.',
     price: 'Prix Accessible',
+    headerBg: 'bg-gradient-to-r from-[#3d6e4f] to-[#2d5a3d]',
     tag: 'Découverte',
-    tagColor: 'bg-[#4a7c59]',
-    color: 'border-green-200 bg-green-50',
   },
 ]
 
@@ -70,28 +65,28 @@ const combos = [
   {
     name: 'Combo Jambes Légères & Drainage Express',
     machines: 'Pressothérapie + Vacuum Thérapie',
-    seances: '3 à 4 séances pressothérapie + 2 à 3 séances vacuum thérapie',
-    bonus: '1 séance de gommage jambes offerte',
-    cible: 'Personnes sujettes à la fatigue des jambes, femmes restant longtemps debout, sportives en récupération.',
+    seances: '3-4 séances pressothérapie + 2-3 séances vacuum thérapie',
+    bonus: '1 séance gommage jambes offerte',
+    cible: 'Personnes sujettes à la fatigue des jambes, sportives en récupération.',
   },
   {
     name: 'Combo Silhouette Affinée & Peau Tonique',
     machines: 'Cavitation Ultrason + Radiofréquence + Vacuum Thérapie',
-    seances: '4 à 6 séances cavitation + 4 à 6 séances radiofréquence + 3 à 4 séances vacuum',
-    bonus: '1 séance de pressothérapie offerte',
+    seances: '4-6 séances cavitation + 4-6 séances RF + 3-4 séances vacuum',
+    bonus: '1 séance pressothérapie offerte',
     cible: 'Personnes souhaitant sculpter leur silhouette après perte de poids ou post-grossesse.',
   },
   {
     name: 'Combo Éclat Visage & Anti-Âge Intensif',
     machines: 'Hydra Spa 18-en-1 + Radiofréquence Faciale',
-    seances: '3 à 4 soins Hydra Spa + 4 à 6 séances radiofréquence visage',
-    bonus: '1 gamme de soins selon la qualité de la peau',
-    cible: 'Femmes et hommes souhaitant rajeunir visiblement leur peau, avant un événement ou pour un entretien régulier.',
+    seances: '3-4 soins Hydra Spa + 4-6 séances radiofréquence visage',
+    bonus: '1 gamme de soins selon type de peau',
+    cible: 'Femmes et hommes souhaitant rajeunir visiblement leur peau.',
   },
   {
     name: 'Combo Peau Lisse & Sans Imperfections',
-    machines: 'Lumière Pulsée + Hydra Glow (nettoyage profond)',
-    seances: '4 à 6 séances lumière pulsée + 2 à 3 séances Hydra Glow',
+    machines: 'Lumière Pulsée + Hydra Glow',
+    seances: '4-6 séances lumière pulsée + 2-3 séances Hydra Glow',
     bonus: 'Soin apaisant post-épilation offert',
     cible: 'Hommes et femmes recherchant une épilation durable et une peau douce.',
   },
@@ -100,51 +95,54 @@ const combos = [
 export default function Packs() {
   return (
     <section id="packs" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-[#4a7c59] font-semibold text-sm uppercase tracking-widest">Programmes personnalisés</span>
-          <h2 className="text-4xl font-bold text-[#2d3d2e] mt-3 mb-4">
+          <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#3d6e4f]">Programmes personnalisés</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1a2520] mt-3 mb-4">
             Nos Packs & Combos
           </h2>
-          <p className="text-[#5c4a3a] text-lg max-w-2xl mx-auto">
+          <div className="w-16 h-1 bg-[#3d6e4f] mx-auto rounded-full mb-6" />
+          <p className="text-[#4a5c52] text-lg max-w-xl mx-auto">
             Des programmes complets et sur-mesure pour atteindre vos objectifs beauté et bien-être.
           </p>
         </div>
 
-        {/* Packs principaux */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Pack cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {packs.map(p => (
-            <div key={p.name} className={`rounded-2xl border-2 p-6 ${p.color} shadow-sm hover:shadow-lg transition-all hover:-translate-y-1`}>
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <span className={`text-xs text-white px-3 py-1 rounded-full font-bold ${p.tagColor}`}>{p.tag}</span>
-                  <h3 className="text-xl font-bold text-[#2d3d2e] mt-2">{p.name}</h3>
-                  <p className="text-[#7a6a5a] text-sm font-medium">{p.subtitle}</p>
-                </div>
+            <div key={p.name} className="bg-white rounded-3xl border border-[#d4e6da] shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
+              {/* Header band */}
+              <div className={`${p.headerBg} px-6 py-5`}>
+                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full border border-white/30">{p.tag}</span>
+                <h3 className="text-lg font-bold text-white mt-2">{p.name}</h3>
+                <p className="text-white/80 text-sm">{p.subtitle}</p>
               </div>
 
-              <p className="text-[#5c4a3a] text-sm leading-relaxed mb-4 italic">"{p.goal}"</p>
+              {/* Body */}
+              <div className="p-6 space-y-4">
+                <p className="text-[#4a5c52] text-sm italic border-l-2 border-[#c9a84c] pl-3">"{p.goal}"</p>
 
-              <div className="space-y-3 mb-5 text-sm">
-                <div>
-                  <span className="font-semibold text-[#2d3d2e]">🔬 Machines :</span>
-                  <p className="text-[#5c4a3a] mt-0.5">{p.machines}</p>
+                <div className="space-y-3 text-sm">
+                  <div className="bg-[#f8fbf9] rounded-xl p-3">
+                    <p className="text-xs font-bold text-[#3d6e4f] uppercase tracking-wide mb-1">🔬 Machines</p>
+                    <p className="text-[#1a2520]">{p.machines}</p>
+                  </div>
+                  <div className="bg-[#f8fbf9] rounded-xl p-3">
+                    <p className="text-xs font-bold text-[#3d6e4f] uppercase tracking-wide mb-1">📅 Séances incluses</p>
+                    <p className="text-[#1a2520]">{p.seances}</p>
+                  </div>
+                  <div className="bg-[#fdf9f0] border border-[#c9a84c]/30 rounded-xl p-3">
+                    <p className="text-xs font-bold text-[#c9a84c] uppercase tracking-wide mb-1">🎁 Bonus offerts</p>
+                    <p className="text-[#1a2520] font-medium">{p.bonus}</p>
+                  </div>
                 </div>
-                <div>
-                  <span className="font-semibold text-[#2d3d2e]">📅 Séances :</span>
-                  <p className="text-[#5c4a3a] mt-0.5">{p.seances}</p>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#2d3d2e]">🎁 Bonus :</span>
-                  <p className="text-[#4a7c59] font-medium mt-0.5">{p.bonus}</p>
-                </div>
-              </div>
 
-              <div className="border-t border-white/60 pt-4">
-                <p className="text-xs text-[#7a6a5a] mb-3">👤 {p.cible}</p>
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-[#4a7c59] text-sm">{p.price}</span>
-                  <a href="#booking" className="bg-[#4a7c59] text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#3d6b4a] transition-colors">
+                <p className="text-xs text-[#7a8f80]">👤 {p.cible}</p>
+
+                <div className="flex items-center justify-between pt-2 border-t border-[#e8f0e8]">
+                  <span className="font-bold text-[#3d6e4f] text-sm">{p.price}</span>
+                  <a href="#booking" className="bg-[#3d6e4f] text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-[#2d5a3d] transition-colors shadow-sm">
                     Réserver
                   </a>
                 </div>
@@ -155,17 +153,19 @@ export default function Packs() {
 
         {/* Combos */}
         <div className="text-center mb-10">
-          <h3 className="text-2xl font-bold text-[#2d3d2e]">Combos Express</h3>
+          <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#3d6e4f]">Solutions ciblées</span>
+          <h3 className="text-3xl font-bold text-[#1a2520] mt-2">Combos Express</h3>
+          <div className="w-12 h-1 bg-[#c9a84c] mx-auto mt-4 rounded-full" />
         </div>
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-5">
           {combos.map(c => (
-            <div key={c.name} className="bg-[#f5f0e8] rounded-2xl p-6 border border-[#e8e0d4] hover:shadow-md transition-shadow">
-              <h4 className="font-bold text-[#2d3d2e] mb-1">{c.name}</h4>
-              <p className="text-[#4a7c59] text-sm font-medium mb-3">🔬 {c.machines}</p>
-              <p className="text-[#5c4a3a] text-sm mb-2">📅 {c.seances}</p>
-              <p className="text-[#4a7c59] text-sm font-medium mb-3">🎁 {c.bonus}</p>
-              <p className="text-xs text-[#7a6a5a] mb-4">👤 {c.cible}</p>
-              <a href="#booking" className="inline-block bg-[#4a7c59]/10 text-[#4a7c59] px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#4a7c59] hover:text-white transition-all">
+            <div key={c.name} className="bg-[#f0f7f3] border border-[#d4e6da] rounded-2xl p-6 hover:shadow-md transition-shadow">
+              <h4 className="font-bold text-[#1a2520] mb-2 text-base">{c.name}</h4>
+              <p className="text-[#3d6e4f] text-sm font-semibold mb-2">🔬 {c.machines}</p>
+              <p className="text-[#4a5c52] text-sm mb-2">📅 {c.seances}</p>
+              <p className="text-[#c9a84c] text-sm font-semibold mb-3">🎁 {c.bonus}</p>
+              <p className="text-xs text-[#7a8f80] mb-4">👤 {c.cible}</p>
+              <a href="#booking" className="inline-block bg-white border border-[#3d6e4f] text-[#3d6e4f] px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-[#3d6e4f] hover:text-white transition-all">
                 Réserver ce combo →
               </a>
             </div>
